@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'https://esm.sh/react';
-import { motion, AnimatePresence, useMotionValue, useTransform } from 'https://esm.sh/framer-motion';
-import { Heart, Stars, Gift, Volume2, VolumeX, Sparkles, ChevronRight, Lock, Timer } from 'https://esm.sh/lucide-react';
-import confetti from 'https://esm.sh/canvas-confetti';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion';
+import { Heart, Stars, Gift, Volume2, VolumeX, Sparkles, ChevronRight, Lock, Timer } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
 const BirthdayApp = () => {
   const GF_NAME = "Agnes Jebarani";
