@@ -5,7 +5,7 @@ import confetti from 'canvas-confetti';
 
 const BirthdayApp = () => {
   const GF_NAME = "Agnes Jebarani";
-  const TARGET_DATE = new Date(2026, 1, 9, 1, 17, 0);
+  const TARGET_DATE = new Date(2026, 1, 9, 1, 23, 0);
 
   const [isBirthday, setIsBirthday] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -21,11 +21,16 @@ const BirthdayApp = () => {
   const rotateX = useTransform(y, [-100, 100], [10, -10]);
   const rotateY = useTransform(x, [-100, 100], [-10, 10]);
 
-  const messages = [
-    "On your special day, I just want to say how much you mean to me.",
-    "You make my life beautiful, and I hope your day is as amazing as you are!",
-    "Every moment with you is a blessing. Happy Birthday, My Love!",
-    "To the most wonderful person I know... Stay happy always! ❤️"
+ const messages = [
+    "On your special day, I just want to say how much you truly mean to me. ❤️",
+    "You make my life incredibly beautiful, and I hope your day is as amazing as you are! ✨",
+    "Every moment spent with you is a blessing I cherish. Happy Birthday, My Love! 🎂",
+    "To the most wonderful person I know... may your smile never fade! 🎈",
+    "Today isn't just your birthday; it's a celebration of the day the world got a little brighter. 💎",
+    "You are my greatest adventure and my favorite person. Always be mine, Agnes! 💖",
+    "May your year be filled with success, laughter, and the kind of happiness you give to me. 🌟",
+    "Your happiness is my priority. Keep shining and keep dreaming big! 😊",
+    "I'm so grateful to have you by my side. Here's to many more birthdays together! 🥂"
   ];
 
   useEffect(() => {
@@ -190,8 +195,7 @@ const BirthdayApp = () => {
                   </button>
                 ) : (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-rose-50 p-4 rounded-2xl text-rose-700 text-sm italic">
-                    "Unna mathiri oru thanga katti kedaika naan romba kuduthu vachukanum. Always be mine! ❤️"
-                  </motion.div>
+                    "Agnes, among the billions of people in this world, you are the only one who truly matters to me. Your kindness, your strength, and your beautiful soul inspire me every single day. On your birthday, I want to promise you that I’ll always be here to support your dreams and hold your hand through every high and low. You are my heart, my soul, and my forever. Happy Birthday, my beautiful queen! ❤️"                  </motion.div>
                 )}
               </div>
             </motion.div>
