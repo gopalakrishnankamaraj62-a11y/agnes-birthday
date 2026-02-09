@@ -5,7 +5,7 @@ import confetti from 'canvas-confetti';
 
 const BirthdayApp = () => {
   const GF_NAME = "Agnes Jebarani";
-  const TARGET_DATE = new Date(2026, 1, 9, 1, 23, 0);
+  const TARGET_DATE = new Date(2026, 1, 16, 0, 0, 0);
 
   const [isBirthday, setIsBirthday] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
